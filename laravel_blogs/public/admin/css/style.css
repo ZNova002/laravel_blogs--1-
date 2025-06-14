@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .user-info {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .user-info button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #1f2a3d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: translateY(-10px);
+}
+
+.container-small { width: 35%;
+margin: auto; overflow: hidden;
+background-color: #ffffff;
+padding: 15px; border-radius: 8px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+
+h1 {
+    text-align: center;
+    color: #1d1b1b;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    color: #101113;
+}
+
+
+/* Input Styles ///////// */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="number"],
+.container select,
+.container textarea,
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="password"],
+.form-wrapper input[type="number"],
+.form-wrapper select,
+.form-wrapper textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #e9ecef;
+    border: 1px solid #303438;
+    border-radius: 5px;
+    color: #343a40;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.float-right {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+input[type="email"] {
+    border-color: #28a745;
+}
+
+input[type="email"]:focus {
+    border-color: #218838;
+}
+
+input[type="password"] {
+    border-color: #ffc107;
+}
+
+input[type="password"]:focus {
+    border-color: #e0a800;
+}
+
+input[type="number"] {
+    border-color: #17a2b8;
+}
+
+input[type="number"]:focus {
+    border-color: #138496;
+}
+
+select {
+    border-color: #6c757d;
+}
+
+select:focus {
+    border-color: #0b0c0c;
+}
+
+textarea {
+    border-color: #fd7e14;
+}
+
+textarea:focus {
+    border-color: #e8590c;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.errors {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
